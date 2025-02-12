@@ -44,3 +44,6 @@ while True:
     
     current_number += 1
 
+# 게임 실행
+if __name__ == "__main__":
+    play_369_game()
