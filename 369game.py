@@ -16,6 +16,9 @@ def get_correct_response(number):
         return "짝"
     else:
         return str(number)
+    
+# 게임 실행
+play_369_game()
 
 # 사용자 입력받아 1 부터 시작
 current_number = 1
