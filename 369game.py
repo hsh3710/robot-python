@@ -16,6 +16,25 @@ def get_correct_response(number):
         return str(number)
 
 # 사용자 입력받아 1 부터 시작
+current_number = 1
+    
+while True:
+    # 사용자 차례
+    print(f"\n현재 숫자: {current_number}")
+    correct_answer = get_correct_response(current_number)
+    user_input = input("당신의 차례: ")
+    
+    #'e'입력 시 게임 종료
+    if user_input.lower() == 'e':
+        print("게임을 종료합니다.")
+        break
+
+    # 오답 시 게임 종료    
+    if user_input != correct_answer:
+        print(f"틀렸습니다! 정답은 {correct_answer}입니다.")
+        break
+        
+    current_number += 1
 
 # 다음 컴퓨터 진행
 
