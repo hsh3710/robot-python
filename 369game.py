@@ -4,7 +4,9 @@ def play_369_game():
     print("3, 6, 9가 들어간 숫자는 '짝'을 입력하세요.")
     print("게임을 종료하려면 'e'를 입력하세요.")
 
-# 사용자 입력받아 1 부터 시작
+# 369를 포함하는지 판정 함수
+def contains_369(number):
+    return any(n_list in str(number) for n_list in ['3', '6', '9'])
 
 # 다음 컴퓨터 진행
 
